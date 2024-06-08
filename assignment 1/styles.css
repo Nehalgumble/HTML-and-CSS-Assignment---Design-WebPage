@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: #fff; 
+    margin: 0;  
+    padding: 0; 
+    overflow-x: hidden; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+header {
+    background-color: #000; 
+    color: #fff;
+}
+
+.logo {
+    flex: 1; 
+}
+
+.social-links {
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.social-links a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+    
+}
+
+nav {
+    background-color: #000; 
+    padding: 10px 0;
+    width: 100%; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; 
+    width: 100%; 
+}
+
+.sidebar {
+    width: 250px; 
+    background-color: #000; 
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #000; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.main-heading, .sub-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    color: #fff; 
+}
+
+.main-content {
+    font-size: 48px;
+    animation: fadeInDown 1s ease forwards; 
+}
+
+.sub-heading {
+    font-size: 24px;
+    animation: fadeInUp 1s ease forwards; 
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.info{
+    position: relative;
+    justify-content: right;
+    
+}
